@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+    <head>
+        <title>'QUIZ'</title>
+    </head>
+    <body>
+     <h1>2차시</h1>
+     <h2>퀴즈1</h2>
+     
+     
+     <form id="quiz" name="quiz">
+    <p>hi.html로 하이퍼링크가 된 '안녕'을 넣고 싶습니다. 어떻게 입력해야 할까요?</p>
+     <input type="radio" id="mc" name="question3" value="1">&lt;a href="hi.html"&gt;안녕&lt;/a&gt;<br>
+     <input type="radio" id="mc" name="question3" value="2">&lt;p href="hi.html"&gt;안녕&lt;/p&gt;<br>
+     <input type="radio" id="mc" name="question3" value="3">&lt;br href="hi.html"&gt;안녕<br>
+     <input type="radio" id="mc" name="question3" value="4">&lt;h1 href="hi.html"&gt;안녕&lt;/h1&gt;<br>
+     
+     </form>
+     <input id="button" type="button" value="제출" onclick="myFunction();">
+     <p id="check"></p>
+
+     <script type="text/javascript">
+        function myFunction() {
+            var question3=document.quiz.question3.value;
+            var correct=0;
+            if (question3=="1"){
+                correct++;
+            }
+            if(correct==1) {
+                document.getElementById("check").innerHTML="정답입니다.<br><a href='3.html'>next</a>";
+            }
+            else {document.getElementById("check").innerHTML="오답입니다.";}
+        }
+        
+    </script>
+    <a href="1.html">prev</a>
+    <br>
+    <p>3/6</p>
+    </body>
+</html>
