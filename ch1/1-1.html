@@ -5,17 +5,18 @@
         <title>'1-1'</title>
     </head>
     <body>
+      <div align="center">
      <h1>1차시 - Quiz 1</h1>
-     
+
      <form id="quiz" name="quiz">
-        
+
      <p> 1. HTML은 무엇의 약자인가요?<br>(전부 소문자로, 세 단어로 작성해주세요.)</p>
      <input id="textbox" type="text" name="question1">
-     
+
      <p> 2. Html은 프로그래밍 언어이다. (O, X)</p>
      <input type="radio" id="mc" name="question2" value="true">O<br>
      <input type="radio" id="mc" name="question2" value="false">X<br>
-     
+
      </form>
      <input id="button" type="button" value="제출" onclick="myFunction();">
      <p id="check"></p>
@@ -30,14 +31,15 @@
             }
            if (question2=="false"){ //답 2
                 correct++;
-            }  
+            }
             if(correct==2) {
                 document.getElementById("check").innerHTML="모두 정답입니다!<br><a href='1-2.html'>next</a>";
             }
             else {document.getElementById("check").innerHTML="오답이 있습니다!";}
         }
-        
+
     </script>
     <a href="index.html">prev</a>
+    </div>
     </body>
 </html>

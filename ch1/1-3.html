@@ -5,10 +5,11 @@
         <title>'1-3'</title>
     </head>
     <body>
+      <div align="center">
      <h1>1차시 - Quiz 2</h1>
-     
+
      <form id="quiz" name="quiz">
-        
+
      <p> 1. h1 ~ h6 중 가장 글씨 크기가 작은 것을 의미하는 태그는?</p>
      <input id="textbox" type="text" name="question1">
 
@@ -25,11 +26,11 @@
       <input type="radio" name="question3" value="v2">i<br>
       <input type="radio" name="question3" value="v3">u<br>
       <input type="radio" name="question3" value="v4">b<br>
-     
+
      <p> 4. 다음 중 줄 바꿈 기능을 원할 때 사용하기를 더 권장받는 태그는?</p>
      <input type="radio" id="mc" name="question4" value="v1">br<br>
      <input type="radio" id="mc" name="question4" value="v2">p<br>
-     
+
      </form>
      <input id="button" type="button" value="제출" onclick="myFunction();">
      <p id="check"></p>
@@ -46,18 +47,19 @@
             }
             if (question2=="v3"){ //답 3
                 correct++;
-            }  
+            }
             if (question3=="v4"){ //답 4
                 correct++;
             }
            if (question4=="v2"){ //답 2
                 correct++;
-            }  
+            }
             if(correct==4) {document.getElementById("check").innerHTML="모두 정답입니다!<br><a href='../ch2/index.html'>2강</a>";}
             else {document.getElementById("check").innerHTML="오답이 있습니다!";}
         }
-        
+
     </script>
     <a href="1-2.html">prev</a>
+    </div>
     </body>
 </html>
